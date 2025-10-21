@@ -1,0 +1,20 @@
+# 6. Remove duplicates from a list
+def remove_duplicates(lst):
+    return list(set(lst))
+
+# 7. Flatten a nested list
+def flatten(lst):
+    return [item for sublist in lst for item in sublist]
+
+# 8. Frequency count using dictionary
+def frequency_count(lst):
+    from collections import Counter
+    return Counter(lst)
+
+# 9. Merge two dictionaries
+def merge_dicts(d1, d2):
+    return {**d1, **d2}
+
+# 10. Sort dictionary by values
+def sort_dict_by_value(d):
+    return dict(sorted(d.items(), key=lambda item: item[1]))
